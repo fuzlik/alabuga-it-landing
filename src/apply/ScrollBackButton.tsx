@@ -5,8 +5,8 @@ import {
   getScrollOrigin,
   SCROLL_ORIGIN_EVENT,
   shouldShowScrollBack,
-} from "../../lib/formScrollBack";
-import { onPageScroll, scrollPageTo } from "../../lib/pageMotion";
+} from "./scrollBack";
+import { onPageScroll, scrollPageTo } from "../landing/motion";
 
 const RECHECK_DELAYS_MS = [120, 400, 900, 1700];
 

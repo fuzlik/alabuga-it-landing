@@ -1,5 +1,5 @@
-import OfficeMapsLink from "../ui/OfficeMapsLink";
-import PrivacyPolicyLink from "../ui/PrivacyPolicyLink";
+import OfficeMapsLink from "../../ui/OfficeMapsLink";
+import PrivacyPolicyLink from "../../ui/PrivacyPolicyLink";
 
 type LandingFooterProps = {
   variant: 'desktop' | 'mobile'

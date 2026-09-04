@@ -6,8 +6,8 @@ import {
   type ChangeEvent,
   type DragEvent,
 } from "react";
-import { RESUME_MAX_FILES } from "../../../shared/resume";
-import { validateResumeFiles } from "../../lib/formValidation";
+import { RESUME_MAX_FILES } from "../../shared/resume";
+import { validateResumeFiles } from "./validation";
 
 export type FormFileUploadHandle = {
   validate: () => boolean;

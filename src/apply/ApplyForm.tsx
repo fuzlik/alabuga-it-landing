@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
-import { submitApplication } from "../../api/submitApplication";
+import { submitApplication } from "./api";
 import FormInput, { type FormInputHandle } from "./FormInput";
 import FormFileUpload, { type FormFileUploadHandle } from "./FormFileUpload";
 import FormCheckbox from "./FormCheckbox";
 import PrivacyPolicyLink from "../ui/PrivacyPolicyLink";
-import { validateName, validatePortfolio } from "../../lib/formValidation";
+import { validateName, validatePortfolio } from "./validation";
 
 type ApplyFormProps = {
   padding: "desktop" | "mobile";

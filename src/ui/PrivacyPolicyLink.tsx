@@ -1,5 +1,5 @@
 import type { MouseEvent, ReactNode } from "react";
-import { PRIVACY_POLICY_URL } from "../../lib/privacyPolicyUrl";
+import { PRIVACY_POLICY_URL } from "../config/privacyPolicyUrl";
 
 type PrivacyPolicyLinkProps = {
   nodeId: string;

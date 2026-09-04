@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import { File } from "node:buffer";
-import type { ValidApplication } from "./validation.js";
+import type { ValidApplication } from "../validation.js";
 
 export function isTelegramConfigured(): boolean {
   return Boolean(process.env.TELEGRAM_BOT_URL?.trim());
@@ -31,7 +31,7 @@ export async function sendApplicationToTelegram(
     );
   }
 
-  const headers: HeadersInit = {};
+  const headers: Record<string, string> = {};
   const apiKey = process.env.TELEGRAM_BOT_API_KEY?.trim();
   if (apiKey) {
     headers["X-Api-Key"] = apiKey;

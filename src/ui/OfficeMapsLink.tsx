@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { OFFICE_MAPS_LABEL, OFFICE_MAPS_URL } from "../../lib/officeMapsUrl";
+import { OFFICE_MAPS_LABEL, OFFICE_MAPS_URL } from "../config/officeMapsUrl";
 
 type OfficeMapsLinkProps = {
   nodeId: string;

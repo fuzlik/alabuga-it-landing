@@ -8,7 +8,7 @@ import {
   type FocusEvent,
   type KeyboardEvent,
 } from "react";
-import { applyPhoneInputChange, formatPhoneDigits, validatePhone } from "../../lib/formValidation";
+import { applyPhoneInputChange, formatPhoneDigits, validatePhone } from "./validation";
 
 export type FormInputHandle = {
   /** Run validation, show error if any. Returns true when valid. */

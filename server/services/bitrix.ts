@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import type { ValidApplication } from "./validation.js";
+import type { ValidApplication } from "../validation.js";
 
 type BitrixResponse<T> = {
   result?: T;
