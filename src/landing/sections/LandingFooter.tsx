@@ -41,10 +41,10 @@ export default function LandingFooter({ variant }: LandingFooterProps) {
               ОГРН 1061674037259
             </p>
             <p className="relative shrink-0 w-full" data-node-id="417:1017">
-              +7 939 745 50 43
+              +7 917 394 69 19
             </p>
             <p className="relative shrink-0 w-full" data-node-id="417:1018">
-              DSuslov@alabuga.ru
+              Etolstykova@alabuga.ru
             </p>
           </div>
         </div>
@@ -72,10 +72,10 @@ export default function LandingFooter({ variant }: LandingFooterProps) {
             ОГРН 1061674037259
           </p>
           <p className="relative shrink-0 whitespace-nowrap" data-node-id="417:681">
-            +7 939 745 50 43
+            +7 917 394 69 19
           </p>
           <p className="relative shrink-0 whitespace-nowrap" data-node-id="417:682">
-            DSuslov@alabuga.ru
+            Etolstykova@alabuga.ru
           </p>
         </div>
       </div>
