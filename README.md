@@ -2,6 +2,8 @@
 
 Пиксель-в-пиксель вёрстка по [Figma Landing-IT](https://www.figma.com/design/Z7XB4lxQIgCXRghWYEANFd/Landing-IT?node-id=417-103).
 
+Сайт: https://fuzlik.github.io/alabuga-it-landing/
+
 ## Запуск
 
 ```bash
