@@ -3,7 +3,8 @@ import { submitApplication } from "./api";
 import FormInput, { type FormInputHandle } from "./FormInput";
 import FormFileUpload, { type FormFileUploadHandle } from "./FormFileUpload";
 import FormCheckbox from "./FormCheckbox";
-import PrivacyPolicyLink from "../ui/PrivacyPolicyLink";
+import DocLink from "../ui/DocLink";
+import { APPLICATION_CONSENT_URL } from "../config/legalUrls";
 import { validateName, validatePortfolio } from "./validation";
 
 type ApplyFormProps = {
@@ -152,18 +153,27 @@ export default function ApplyForm({
             className={checkboxClassName}
             labelClassName={checkboxLabelClassName}
             label={
-              <PrivacyPolicyLink
-                nodeId={checkboxLabelNodeId}
-                inCheckboxLabel
+              <span
+                data-node-id={checkboxLabelNodeId}
+                data-name="label"
                 className={[
-                  "font-medium leading-6 tracking-[0.2px] text-white/90 underline decoration-white/35 underline-offset-[3px] hover:decoration-white/80",
+                  "min-w-0 flex-1 font-medium leading-[1.4] tracking-[0.2px] text-white/90 whitespace-normal",
                   checkboxLabelClassName,
                 ]
                   .filter(Boolean)
                   .join(" ")}
               >
-                Политика конфиденциальности
-              </PrivacyPolicyLink>
+                Нажимая на кнопку «Подать заявку», Вы даете{" "}
+                <DocLink
+                  href={APPLICATION_CONSENT_URL}
+                  inCheckboxLabel
+                  className="underline decoration-white/35 underline-offset-[3px] hover:decoration-white/80"
+                >
+                  согласие на обработку своих персональных данных
+                </DocLink>{" "}
+                в соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О
+                персональных данных».
+              </span>
             }
             defaultChecked
             onCheckedChange={(checked) => {
@@ -177,7 +187,7 @@ export default function ApplyForm({
               role="alert"
               className="px-[16px] text-[14px] leading-5 tracking-[0.2px] text-[#e7000b]"
             >
-              Нужно согласие с политикой конфиденциальности
+              Нужно согласие на обработку персональных данных
             </p>
           ) : null}
         </div>

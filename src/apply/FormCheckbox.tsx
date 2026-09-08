@@ -36,7 +36,7 @@ export default function FormCheckbox({
   return (
     <label
       htmlFor={id}
-      className={["flex items-center gap-[12px] cursor-pointer select-none", className]
+      className={["flex items-start gap-[12px] cursor-pointer select-none", className]
         .filter(Boolean)
         .join(" ")}
       data-node-id={nodeId}
@@ -45,7 +45,7 @@ export default function FormCheckbox({
     >
       <span
         className={[
-          "relative inline-flex size-[24px] shrink-0 items-center justify-center rounded-[6px] border transition-colors",
+          "relative mt-[2px] inline-flex size-[24px] shrink-0 items-center justify-center rounded-[6px] border transition-colors",
           error
             ? "border-[#e7000b] bg-[rgba(231,0,11,0.05)]"
             : checked

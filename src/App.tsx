@@ -12,6 +12,7 @@ import {
 import LandingDesktop from './landing/LandingDesktop'
 import LandingMobile from './landing/LandingMobile'
 import { initPageMotion } from './landing/motion'
+import CookieBanner from './ui/CookieBanner'
 
 function App() {
   const canvasRef = useRef<HTMLDivElement>(null)
@@ -125,6 +126,7 @@ function App() {
         </div>
         <ScrollBackButton />
       </div>
+      <CookieBanner />
     </div>
   )
 }
