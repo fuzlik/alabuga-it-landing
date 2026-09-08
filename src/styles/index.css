@@ -760,6 +760,10 @@ html.has-smooth-scroll {
   width: min(100vw, 1920px);
 }
 
+[data-partner-marquee-for="417:704"] {
+  width: 390px;
+}
+
 .partner-marquee-track {
   display: flex;
   flex-wrap: nowrap;
