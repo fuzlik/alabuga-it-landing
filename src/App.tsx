@@ -5,12 +5,12 @@ import { bindLandingInteractions } from './landing/bindInteractions'
 import {
   contentColumnSelector,
   DESKTOP,
+  LandingDesktop,
+  LandingMobile,
   measureViewport,
   MOBILE,
   type Viewport,
-} from './landing/canvas'
-import LandingDesktop from './landing/LandingDesktop'
-import LandingMobile from './landing/LandingMobile'
+} from './landing'
 import { initPageMotion } from './landing/motion'
 import CookieBanner from './ui/CookieBanner'
 
