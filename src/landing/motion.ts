@@ -325,6 +325,7 @@ function initHoverLift(root: HTMLElement): Cleanup {
     )
     .forEach((el) => {
       if (el.closest(".form-file-upload")) return;
+      if (el.closest("[data-apply-banner]")) return;
       el.setAttribute("data-motion-hover", "lift");
     });
   return () => undefined;
